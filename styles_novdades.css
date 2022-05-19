@@ -1,0 +1,146 @@
+html{
+  font-family: 'ZCOOL XiaoWei', serif !important;
+}
+.first {
+  background-image: url(car_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:700px;
+  color: white;
+}
+
+.first h1 {
+  color: white;
+}
+
+.row {
+  padding-left:7%;
+  padding-right: 7%;
+}
+.firt a {
+  color: white !important;
+}
+.social li{
+  font-size: 17px;
+  display: inline-block;
+  float:right;
+  padding-right: 1%;
+}
+
+li a{
+  color: white !important;
+}
+
+nav{
+  margin-top: 6%;
+  border-top: 1px solid white;
+}
+ .pink{
+   background-image: url(suv_honda.jpg);
+     background-repeat: no-repeat;
+
+       background-size: cover;
+         height:200px;
+
+ }
+ .green{
+   background-image: url(viento_car.jpg);
+     background-repeat: no-repeat;
+
+       background-size: cover;
+         height:200px;
+
+ }
+ .pic {
+   background-image: url(citroen.jpg);
+     background-repeat: no-repeat;
+
+       background-size: cover;
+         height:200px;
+
+ }
+ .pic2 {
+   background-image: url(lambo.jpg);
+     background-repeat: no-repeat;
+
+       background-size: cover;
+         height:200px;
+
+ }
+ .pic3 {
+   background-image: url(smart.jpg);
+     background-repeat: no-repeat;
+
+       background-size: cover;
+         height:200px;
+
+ }
+ .pic4 {
+   background-image: url(tesla.jpg);
+     background-repeat: no-repeat;
+       background-size: cover;
+
+         height:200px;
+
+ }
+ .teal {
+   background-image: url(citroen.jpg);
+     background-repeat: no-repeat;
+
+       background-size: cover;
+         height:200px;
+
+ }
+
+ a h3 {
+
+   color: white;
+      transition: background-color .5s;
+ }
+
+a h3:hover {
+  text-decoration: none!important;
+   background-color: #4B6693;
+ }
+
+
+.four button{
+  background-color: #1C2541;
+  border-radius: 6px;
+  padding: 3%;
+}
+
+.what_to_do button a{
+  color: black;
+  font-variant: all-petite-caps;
+}
+
+.four {
+  background-image: url(grande.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 420px;
+
+}
+
+.four h1{
+  text-decoration: none!important;
+  padding: 10%;
+  color: white;
+}
+
+ .four button a{
+   color: white;
+   font-variant: all-petite-caps;
+   font-size: 25px;
+ }
+
+
+
+
+footer {
+  background-color: #1C2541;
+  color:white;
+  padding: 4%;
+}
