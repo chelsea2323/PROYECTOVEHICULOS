@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background-color:#1c2541;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #1977cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3291e6;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+/*--------------------------------------------------------------
+# topbar
+--------------------------------------------------------------*/
+#topbar {
+  background-color:  #154360 ;
+}
+
+
+/*--------------------------------------------------------------
+# modalform
+--------------------------------------------------------------*/
+.modalform{
+  padding:auto;
+  width:auto;
+  height: auto;
+  margin: auto !important;
+  margin-top: 0 !important;
+  margin-left: auto  !important;
+  margin-right: auto  !important;
+}
+.containerform{
+  margin-top: 0 !important;
+margin-right: auto !important;
+margin-bottom: 0 !important;
+margin-left: auto !important;
+}
+.modalbody{
+
+
+}
+.bg-image{
+  width: 500px;
+  height: 300px;
+
+}
