@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style_alta.css">
+  <title>Registrarse</title>
+</head>
+<body>
+  <form action="index.html">
+    <h4>Regístrate</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre"  required>
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido"  required>
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese un correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese una contraseña de 8 o más carácteres" pattern=".{8,}" required>
+    <p>Estoy de acuerdo con <a href="terminos_condiciones.html" target="_blank">Términos y Condiciones</a></p>
+    <a class="btn btn-primary" href="inicio.html" role="button">
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+    <a>
+    <p><a href="login.html">Ya tengo una cuenta</a></p>
+  </form>
+
+</body>
+</html>

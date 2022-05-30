@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Auto concesonario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!--LINKS -->
+  <!--  JavaScript: jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--navegacion  -->
+  <header id="header" class="fixed-top">
+    <!-- Topbar Start -->
+    <div class="container-fluid p-0 " style="background-color: #154360;color: white;">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <small class="fa fa-map-marker-alt text-primary me-2"></small>
+          <small>Avd. de América 65, Madrid(España)</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center py-3">
+            <small class="far fa-clock text-primary me-2"></small>
+            <small>Lun - Sab : 09.00 AM - 05.00 PM</small>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <small class="fa fa-phone-alt text-primary me-2"></small>
+            <small>+34 222222222</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg></a>
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg></i></a>
+
+            <a class="btn btn-sm-square bg-white text-primary me-0" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0 ">
+      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <img src="images/45.png" alt="" width="300">
+      </a>
+      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="#nosotros" class="nav-item nav-link active">Sobre nosotros</a>
+          <a href="#cochesnuevos" class="nav-item nav-link">Coches nuevos</a>
+          <a href="service.html" class="nav-item nav-link">Novedades</a>
+           <a href="service.html" class="nav-item nav-link">Testimonios</a>
+          
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Más</a>
+            <div class="dropdown-menu fade-up m-0">
+              <a href="servicios.html" class="dropdown-item">Servicios</a>
+              <a href="https://www.mutua.es/seguros-coche/calcular/?dis=dis:redes:auto2022:mejorprecio:coche:vocento:autocasion:parrillas:pp:c:mejorprecio:textlink:multi:nonecotizadorparricoche&dclid=CjgKEAjwhLKUBhCd1OOv1-iLnUUSJAAvMnfrni-Pn-E6XsllaXLBMNEk6q21KE7-cUiPXAAyGEdRWfD_BwE#/codigoPostal" class="dropdown-item"  target="_blank">Calcula tu seguro</a>
+             
+        
+            </div>
+          </div>
+          <a href="contacto.html" class="nav-item nav-link">Contáctanos</a>
+        </div>
+        <div class="col-md-3 text-end">
+          <a href="login.html">
+          <button type="button" class="btn"title="Login">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+            Mi Cuenta
+          </button>
+</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+  </header>
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 mb-5">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="images/coche2.jpg" alt="Image">
+          <div class="carousel-caption d-flex flex-column align-items-left justify-content-center">
+            <div class="col-10 col-lg-7 text-center text-lg-center">
+              <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">La mejor inversión a tu vida</h6>
+              <h1 class="display-3 text-white mb-4 animated slideInDown">Tenemos el coche que necesitas</h1>
+              <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Coches nuevos</a>
+              <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Reservalo ya</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="w-100 height-100px" src="images/sky.jpg" alt="Image">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 700px;">
+              <h6>La mejor inversión </h6>
+              <h1>Consulta con tu concesionario </h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Carousel End -->
+  <!-- SECTION ABOUT  -->
+  <!--================ About History Area  =================-->
+        <section id="nosotros">
+
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-6 d_flex align-items-center">
+                        <div class="about_content ">
+                            <h1 class="title title_color">Sobre Nosotros <br></h1>
+                            <p>
+                             Somos una empresa que surgió en el año 2001, tras la idea de nuestro fundador Chelsea Aristazabal y cofundador Cristina Serrano.<br>
+                          Líderes en gestión y ventas de automóviles en España con toda la experiencia y el conocimiento que aportan sus más de 20 años de trayectoria.<br><br>
+                          Ofrece a los usuarios que buscan coche un completo catálogo de herramientas que comprenden no solo la compra, sino también una amplia y creciente gama de servicios relacionados con el mundo del automóvil.</p>
+                             </p>
+                          
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="images/personas.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+        
+        
+                <section class="cochesnuevos" id="cochesnuevos">
+                   <div class="testimonios container">
+                   <br>
+               
+                   <h1 class="tittlecoches  text-center"  style=" color:#154360;">Coches nuevos</h1>
+              
+                   
+<div class="row row-cols-1 row-cols-md-2 g-4">
+
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn-images.motor.es/image/m/756w504h/fotos-jato/seat/uploads/seat-arona-620a0dd01e470.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">SEAT Arona</h5>
+        <h4>16.600 €</h4>
+        <p class="card-text">El SEAT Arona únicamente está disponible en configuración con tracción delantera, pero sí que tiene una oferta de opciones mecánicas bastante variada y amplia</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn-images.motor.es/image/m/756w504h/fotos-jato/hyundai/uploads/hyundai-tucson-610292db05960.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hyundai Tucson</h5>
+        <h4>24.741 €</h4>
+        <p class="card-text">El Hyundai Tucson es uno de los modelos SUV de más éxito. La cuarta generación del modelo cambia a nivel de diseño, de equipamiento y de tecnología.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://static.motor.es/fotos-jato/dacia/uploads/dacia-sandero_mid6012b738bf124.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Dacia Sandero</h5>
+         <h4>10.354 €</h4>
+        <p class="card-text">el Dacia Sandero es ahora un coche más fresco en términos de diseño, a la par que atractivo, y en su interior ha mejorado sus calidades. Sin ser un modelo destacable por las calidades de su interior</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://static.motor.es/fotos-jato/peugeot/uploads/peugeot-2008_mid6012b757bc838.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Peugeot 2008</h5>
+         <h4> 20.749 €</h4>
+        <p class="card-text">Peugeot le dio un giro completo a su modelo con la llegada de la segunda generación del Peugeot 2008. Pasó de ser un modelo poco llamativo, a ser uno de los más destacables  por su diseño y equipamiento.</p>
+      </div>
+    </div>
+  </div>
+</div>     
+</div>              
+        </section>
+        <section>
+             <div class="container">
+                 <br>
+               
+                   <h1 class="tittlecoches  text-center"  style=" color:#154360;">Novedades</h1>
+                   
+                   <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+     <img src="images/suv_honda.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title"><a style="text-decoration:none;" href="https://www.autocasion.com/actualidad/pruebas/honda-zr-v-2023-suv-compacto-hibrido-informacion-datos-imagenes" target="_blank">
+                       <h4> El próximo SUV de Honda ya tiene nombre</h4>
+                     </a></h5>
+
+  </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card">
+     <img src="images/viento_car.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title"><a style="text-decoration:none;" href="https://www.autocasion.com/actualidad/pruebas/honda-zr-v-2023-suv-compacto-hibrido-informacion-datos-imagenes" target="_blank">
+                       <h4> Viento, lluvia y nieve... Cómo conducir en invierno</h4>
+                     </a></h5>
+
+  </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card">
+     <img src="images/smart.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title"><a style="text-decoration:none;" href="https://www.autocasion.com/actualidad/pruebas/honda-zr-v-2023-suv-compacto-hibrido-informacion-datos-imagenes" target="_blank">
+                       <h4> Nuevo Smart #1: llega el primer SUV eléctrico de la marca</h4>
+                     </a></h5>
+
+  </div>
+    </div>
+  </div>
+  
+      <div class="col">
+    <div class="card">
+     <img src="images/citroen.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title"><a style="text-decoration:none;" href="https://www.autocasion.com/actualidad/pruebas/honda-zr-v-2023-suv-compacto-hibrido-informacion-datos-imagenes" target="_blank">
+                       <h4>Primera prueba del Citroën C5 X 2022: digno heredero</h4>
+                     </a></h5>
+
+  </div>
+    </div>
+  </div>
+      <div class="col">
+    <div class="card">
+     <img src="images/tesla.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title"><a style="text-decoration:none;" href="https://www.autocasion.com/actualidad/pruebas/honda-zr-v-2023-suv-compacto-hibrido-informacion-datos-imagenes" target="_blank">
+                       <h4> Elon Musk revela que ya hay 146.000 reservas del nuevo Tesla Cybertruck</h4>
+                     </a></h5>
+
+  </div>
+    </div>
+  </div>
+  
+      <div class="col">
+    <div class="card">
+     <img src="images/lambo.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title"><a style="text-decoration:none;" href="https://www.autocasion.com/actualidad/pruebas/honda-zr-v-2023-suv-compacto-hibrido-informacion-datos-imagenes" target="_blank">
+                       <h4> Nuevo Lamborghini Huracán Tecnica 2022: Jekyll y Hyde</h4>
+                     </a></h5>
+
+  </div>
+    </div>
+  </div>
+  
+ 
+ 
+ 
+ 
+ 
+</div>
+
+
+ 
+        
+        </section>
+        
+        
+        
+        
+        
+        
+    <!-- ======= Testimonios Section ======= -->
+    <section id="team" class="team">
+                <div class="testimonios container">
+                <br>
+                    <h1 class="text-center" style=" color:#fff;">Testimonios</h1>
+                <div class="row container">
+                     <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                         <i class="text-center fa-solid fa-person-dress"></i>
+                         <h3>Lorena</h3>
+                         <p> "Estoy muy contenta con mi nuevo Suzuki S-CROSS, he viajado ya un par de veces, es muy cómodo..."   <div class="row">
+
+                         </div>
+                     </div>
+                     <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                        <i class="text-center fa-solid fa-users"></i>
+                        <h3>Ángel, Luis y Marta</h3>
+                        <p>"Teníamos muchas ganas de adquirir un nuevo coche para hacer viajes en familia, ha sido muy buena elección comprar el Citroën Gran C4 Picasso..."</p>
+                        <div class="row">
+
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                         <i class="text-center fa-solid fa-user-tie"></i>
+                         <h3>Álvaro</h3>
+                         <p> Lo utilizo todos los días para ir a trabajar, es un modelo muy elegante y cuenta con muchas funciones(Hyundai Sonata)...</p>
+                         <div class="row">
+
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row container">
+                      <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                          <i class="text-center fa-solid fa-person-cane"></i>
+                          <h3>Antonio</h3>
+                          <p>"A mi edad quería optar por un coche en el que me sienta cómodo y me diera seguridad. Creo que escogí el adecuado(Renault Mégane E-Tech)..."</p>
+                          <div class="row">
+
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                         <i class="text-center fa-solid fa-person"></i>
+                         <h3>Fernando</h3>
+                         <p>"Me encanta lo preciso que es, lo llevo usando un año y de momento es perfecto para mí(Lexus NX)..."</p>
+                         <div class="row">
+
+                         </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                          <i class="text-center fa-solid fa-user-graduate"></i>
+                          <h3>David</h3>
+                          <p>"Es mi primer coche, es muy sencillo de manejar, sube  y baja muy bien las cuestas(Toyota Yaris Hybrid)..."</p>
+                          <div class="row">
+
+                          </div>
+                      </div>
+                  </div>
+             </div>       
+    </section><!-- fin testimonios Section -->
+        <!-- ======= Servicios ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+   
+          <h1 class="text-center" style=" color:#154360;">Servicios</h1> <br><br>
+
+  
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+            <div class="icon-box icon-box-pink"  ">
+              <div class="icon">
+               <img src="images/1.jpg" class="img-fluid " alt="...">
+              </div>
+              <h4 class="title"><a href="">Asesoramiento</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+             <img src="images/3.jpg" class="img-fluid " alt="...">
+              <h4 class="title"><a href="">Accesorios para tu automóvil </a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+      
+                   <img src="images/2.jpg" class="img-fluid " alt="...">
+              <h4 class="title"><a href="">Venta de vehículos</a></h4>
+             
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><i class="bx bx-world"></i></div>
+               <img src=" https://www.caixabankpc.com/documents/20182/56941/iStock-621906578_optimitzed.jpg/600f8ccf-f62a-93d4-b231-75c3794bdacf?t=1510739960000" class="img-fluid " alt="...">
+             
+              <h4 class="title"><a href="">Financiación</a></h4>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+            <!-- Footer Start -->
+            <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" >
+                <div class="container py-5">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="text-light mb-4">Dirección</h4>
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Avd. de América 65, Madrid(España)</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg></a>
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg></i></a>
+
+            <a class="btn btn-sm-square bg-white text-primary me-0" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="text-light mb-4">Horario</h4>
+                            <h6 class="text-light">Lunes - Viernes:</h6>
+                            <p class="mb-4">09:00 AM - 05:00 PM</p>
+                            <h6 class="text-light">Sábados:</h6>
+                            <p class="mb-0">09:00 AM - 1:.00 PM</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="text-light mb-4">Servicios</h4>
+                            <a class="btn btn-link" href="asesoramiento.html">Asesoramiento</a>
+                            <a class="btn btn-link" href="accesorios.html">Accesorios para tu coche</a>
+                            <a class="btn btn-link" href="">Venta de vehículos</a>
+                            <a class="btn btn-link" href="">Financiación</a>
+                          
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="text-light mb-4">Newsletter</h4>
+                            <p>Subscribete a nuestras promociones y ofertas.</p>
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder=" email">
+                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+            </div>
+            <!-- Footer End -->
+</body>
+
+</html>

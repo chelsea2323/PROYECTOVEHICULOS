@@ -1,0 +1,234 @@
+html{
+  font-family: 'ZCOOL XiaoWei', serif !important;
+}
+.container {
+    padding-bottom: 5%;
+}
+.first {
+  background-color: #7C8CA1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:3600px;
+  color: white;
+}
+.first h1{
+  padding-top: 5%;
+  text-align: center;
+}
+.first h1 {
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+
+.firt a {
+  color: white !important;
+}
+.social li{
+  font-size: 30px;
+  display: inline-block;
+  float:right;
+  padding-right: 5%;
+}
+
+li a{
+  color: white !important;
+
+}
+
+nav{
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 6%;
+  border-top: 1px solid white;
+}
+
+ div h3 {
+     border-radius: 15px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  transition: background-color .5s;
+
+ }
+
+div h3:hover {
+  border-radius: 15px;
+  text-decoration: none!important;
+   background-color: #4B6693;
+ }
+
+
+.franja{
+  height: 100vh;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+ .conte_parent{
+   display:flex;
+   justify-content:space-around;
+   align-items:center;
+   flex-wrap:wrap;
+
+ }
+ .conte{
+     height: 510px;
+     width: 25%;
+     box-shadow:0 0 7px #111 ;
+     margin: 0 30px;
+     background-color: white;
+ }
+ .conte .card{
+     height: 200px;
+     width: 100%;
+     margin-bottom: 10px;
+ }
+ .card img{
+    padding-top: 7px;
+     margin: auto;
+     display: block;
+ }
+ .conte .portabebidas img{
+     height: 330px;
+     width: 330px;
+ }
+
+
+ .conte .organizador img{
+     height: 330px;
+     width: 286px;
+ }
+ .conte .humificador img{
+     height: 330px;
+     width: 280px;
+ }
+ .conte .cadenas img{
+     height: 330px;
+     width: 200px;
+ }
+ .conte .rascador img{
+     height: 330px;
+     width: 300px;
+ }
+ .conte .pala img{
+     height: 230px;
+     width: 210px;
+ }
+ .conte .arrancador img{
+     height: 210px;
+     width: 250px;
+ }
+ .conte .cafetera img{
+     height: 230px;
+     width: 300px;
+ }
+ .conte .luz img{
+     height: 200px;
+     width: 300px;
+ }
+ .conte .bengala img{
+     height: 230px;
+     width: 300px;
+ }
+
+ .conte .portaesquis img{
+     height: 190px;
+     width: 300px;
+ }
+
+ .conte .linterna img{
+     height: 200px;
+     width: 230px;
+ }
+
+ .conte .receptor img{
+     height: 230px;
+     width: 200px;
+ }
+ .conte .protector img{
+     height: 230px;
+     width: 200px;
+ }
+ .conte .kit img{
+     height: 230px;
+     width: 200px;
+ }
+
+ .informacion{
+     height: 80px;
+     width: 100%;
+ }
+ .informacion h1{
+     font-family: sans-serif;
+     font-size: 1.2em;
+     text-align: center;
+     color: #333;
+     margin-bottom: 160px;
+ }
+ .informacion p{
+     text-align: center;
+     font-family: sans-serif;
+     font-size: .9em;
+     color: #555;
+      margin-bottom: 10px;
+ }
+ .precio {
+     height:50px;
+     width: 85%;
+     margin: auto;
+     font-family: sans-serif;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 140px;
+ }
+ .box-precio{
+     width: 80px;
+ }
+  .precio1{
+     color: red;
+     font-size: .8em;
+ }
+ .precio .precio2{
+   color: black;
+     font-size: 1.5em;
+ }
+ .shopping{
+     font-size: 2em;
+     color: black;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #1C2541;
+  color:white;
+  padding: 4%;
+}

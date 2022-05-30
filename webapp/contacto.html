@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/all.min.css">
+  <title>Contacto</title>
+</head>
+<body>
+  <form action="/Proyecto/Proyecto/paginaprincipal.html">
+    <h4>Contacta con nosotros</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre*" required>
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos*" required>
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Correo electrónico*" required>
+    <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Teléfono*"  pattern="[0-9]+" required>
+    <select class="controls" type="option" name="option" id="option" placeholder="País*" required>
+      <option value="País">País</option>
+      <option value="España">España</option>
+      <option value="Portugal">Portugal</option>
+      <option value="Francia">Francia</option>
+      <option value="Reino Unido">Reino Unido</option>
+      <option value="Italia">Italia</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Chile">Chile</option>
+      <option value="Perú">Perú</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Bolivia">Bolivia</option>
+      <option value="Venezuela">Venezuela</option>
+      <option value="Guatemala">Guatemala</option>
+      <option value="México">México</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="Brasil">Brasil</option>
+      <option value="Costa Rica">Costa Rica</option>
+      <option value="Puerto Rico">Puerto Rico</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Japón">Japón</option>
+      <option value="Corea del Sur">Corea del Sur</option>
+      <option value="Taiwán">Taiwán</option>
+      <option value="China">China</option>
+      <option value="Singapur">Singapur</option>
+            <option value="Filipinas">Filipinas</option>
+    </select>
+    <textarea name="mensaje" cols="44" rows="13" wrap="hard" required></textarea>
+    <input type="checkbox" name="casilla" required>  He leído y acepto la <a href="https://pmp.antevenio.com/antevenio/ant-politica-de-privacidad-es">política de privacidad</a>
+
+    <a class="btn btn-primary" href="inicio.html" role="button"></a>
+    <button type="submit" class="btn btn-primary">CONTACTAR</button>
+
+
+  </form>
+  <div class="success hide">
+    <span class="check"><i class="fa fa-check-circle"></i></span>
+    <span class="msg">Aviso: ¡Mensaje enviado correctamente!</span>
+    <span class="crose"></span>
+  </div>
+
+  <script src="jquery.3.4.1.js"></script>
+  <script src="all.min.js"></script>
+</body>
+</html>

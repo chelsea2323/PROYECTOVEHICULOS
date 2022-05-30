@@ -1,0 +1,114 @@
+html{
+  font-family: 'ZCOOL XiaoWei', serif !important;
+}
+.container {
+    padding-bottom: 5%;
+}
+.first {
+  background-color: #E3E3E3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:900px;
+  color: #455685;
+}
+.first h1{
+  padding-top: 5%;
+  text-align: center;
+}
+.first h1 {
+  color: #455685;
+}
+
+.row{
+    padding-left: 5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.firt a {
+  color: #455685;
+}
+.social li{
+  font-size: 30px;
+  display: inline-block;
+  float:right;
+  padding-right: 5%;
+  color: #455685;
+}
+
+li a{
+  color: #455685;
+
+}
+
+nav{
+  margin-top: 6%;
+  border-top: 1px solid white;
+    color: #455685;
+}
+div p{
+   font-style: italic;
+}
+ div h3 {
+     border-radius: 15px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  transition: background-color .5s;
+
+ }
+
+div h3:hover {
+  border-radius: 15px;
+  text-decoration: none!important;
+   background-color: #4B6693;
+ }
+
+
+.four {
+  background-image: url(asesoramiento_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+
+}
+
+.four h1{
+  text-decoration: none!important;
+  padding: 6%;
+  color: white;
+}
+
+
+footer {
+  background-color: #1C2541;
+  color:white;
+  padding: 4%;
+}
+
+
+.testimonios i{
+    font-size: 40px;
+}
+.testimonios div {
+    padding: 3%;
+    color: #6D6E72;
+}
+
+.testimonios button,{
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 3%;
+}
+
+.what_to_do button a{
+  color:  #222828;
+  font-variant: all-petite-caps;
+}
